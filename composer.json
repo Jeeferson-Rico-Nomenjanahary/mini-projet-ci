@@ -1,0 +1,22 @@
+{
+    "name": "dev/mini-projet-ci",
+    "autoload": {
+        "psr-4": {
+            "Dev\\MiniProjetCi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "rico nomenjanahary jeeferson",
+            "email": "nomenajanaharyrico@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9",
+        "squizlabs/php_codesniffer": "^3.10"
+    },
+    "scripts": {
+        "cs": "phpcs --standard=PSR12 index.php"
+    }
+
+}
