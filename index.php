@@ -1,7 +1,12 @@
 <?php
 // mini-projet-ci
-function add($a, $b) {
-    return $a + $b;
-}
+require_once './src/Calculator.php';  // Inclure la classe Calculator
 
-echo "Hello, World! The sum of 2 and 3 is: " . add(2, 3);
+$calculator = new Calculator();  // Créer une instance de la classe Calculator
+
+$a = 2;
+$b = 3;
+
+$result = $calculator->add($a, $b);  // Appeler la méthode add()
+
+echo "Hello, World! The sum of $a and $b is: " . $result;

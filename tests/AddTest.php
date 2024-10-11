@@ -1,10 +1,12 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
+require_once './src/Calculator.php';  // Inclure la classe Calculator
 
 class AddTest extends TestCase {
     public function testAdd() {
-        $this->assertEquals(5, add(2, 3));
-        $this->assertEquals(0, add(-1, 1));
+        $calculator = new Calculator();  // Créer une instance de Calculator
+        $this->assertEquals(5, $calculator->add(2, 3));
+        $this->assertEquals(0, $calculator->add(-1, 1));
     }
 }
